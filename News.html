@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link rel="stylesheet 1" href="CSS/Main.css">
+    <link rel="stylesheet 2" href="CSS/News.css">
+
+    <script src="JavaScript/Main.js"></script>
+
+    <title>News</title>
+</head>
+<body>
+    <header class="background-header"></header>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="Images/Logo.png"></a>
+            </div>
+
+            <div class="logotext">
+                <a href="Home.html"><p>LightStudios</p></a>
+            </div>
+
+            <div class="maintext">
+                <ul class="links">
+                    <li><a href="Home.html" class="underline">Home</a></li>
+                    <li><a href="About.html" class="underline">About</a></li>
+                    <li><a href="Games.html" class="underline">Games</a></li>
+                    <li><a href="Services.html" class="underline">Services</a></li>
+                    <li><a href="Support.html" class="underline">Support</a></li>
+                    <li><a href="News.html" class="disabled" id="news">News</a></li>
+                </ul>
+            </div>
+           <div class="button">
+            <a href="Error.html" class="action_btn">Log in</a>
+           </div>
+            <button class="toggle_btn">☰</button>
+        </div>
+    
+        <div class="dropdown_menu">
+            <li><a href="Home.html" class="underline">Home</a></li>
+            <li><a href="About.html" class="underline">About</a></li>
+            <li><a href="Games.html" class="underline">Games</a></li>
+            <li><a href="Services.html" class="underline">Services</a></li>
+            <li><a href="Support.html" class="underline">Support</a></li>
+            <li><a href="News.html" class="disabled" id="news">News</a></li>
+            <li><a href="Error.html" class="action_btn">Log in</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="main">
+            <h1>⚠️ Regrettably, no news to offer right now! ⚠️</h1>
+            <hr>
+            <h2>Check back later and there might be something. 😊</h2>
+        </section>
+    </main>
+    
+    <div class="social-container">
+        <img src="Images/YT.png" alt="" onclick="YouTube()" class="social">
+        <img src="Images/Tiktok.png" alt="" onclick="TikTok()" class="social">
+        <img src="Images/Discord.png" alt="" onclick="Discord()" class="social">
+    </div>
+
+    <p class="copyright">Copyright 2024 Alex</p>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+        
+        toggleBtn.onclick = function () {
+
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            if (isOpen)
+            {
+                toggleBtn.innerHTML = "➤"
+            } else
+            {
+                toggleBtn.innerHTML = "☰"
+            }
+        }
+    </script>
+</body>
+</html>

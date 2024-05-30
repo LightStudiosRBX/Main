@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.service-wrapper {
+    padding: 5% 8%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex; /* Changed from grid to flex */
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center cards horizontally */
+    gap: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px); /* Adjusted flex basis to accommodate 3 cards per row */
+    max-width: calc(33.33% - 20px); /* Limit card width */
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: .2px solid rgba(114, 226, 174, .2);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; /* Add margin between rows */
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -50%;
+    width: 200%;
+    transform: rotate(45deg);
+    background-color: #fff;
+    height: 18px;
+    filter: blur(30px);
+    opacity: .5;
+    transition: 1s;
+    margin-top: 100px;
+}
+
+.card:hover::after {
+    width: 200%;
+    top: -100%;
+}
+
+.card h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(255, 255, 255, .6);
+}
+
+.card:hover {
+    background-color: rgba(40, 72, 109, 0.75);
+    transform: translateY(-8px);
+    border-color: #1c2335;
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        justify-content: space-between; /* Distribute cards evenly */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px); /* Set flex basis to 100% for single card per row */
+        max-width: calc(100% - 20px); /* Limit card width */
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}

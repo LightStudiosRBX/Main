@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link rel="stylesheet 1" href="CSS/Main.css">
+    <link rel="stylesheet 2" href="CSS/Games.css">
+
+    <script src="JavaScript/Main.js"></script>
+
+    <title>Games</title>
+</head>
+<body>
+    <header class="background-header"></header>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="Images/Logo.png"></a>
+            </div>
+
+            <div class="logotext">
+                <a href="Home.html"><p>LightStudios</p></a>
+            </div>
+
+            <div class="maintext">
+                <ul class="links">
+                    <li><a href="Home.html" class="underline">Home</a></li>
+                    <li><a href="About.html" class="underline">About</a></li>
+                    <li><a href="Games.html"class="disabled">Games</a></li>
+                    <li><a href="Services.html" class="underline">Services</a></li>
+                    <li><a href="Support.html" class="underline">Support</a></li>
+                    <li><a href="News.html" class="underline" id="news">News</a></li>
+                </ul>
+            </div>
+           <div class="button">
+            <a href="Error.html" class="action_btn">Log in</a>
+           </div>
+            <button class="toggle_btn">☰</button>
+        </div>
+    
+        <div class="dropdown_menu">
+            <li><a href="Home.html" class="underline">Home</a></li>
+            <li><a href="About.html" class="underline">About</a></li>
+            <li><a href="Games.html"class="disabled">Games</a></li>
+            <li><a href="Services.html" class="underline">Services</a></li>
+            <li><a href="Support.html" class="underline">Support</a></li>
+            <li><a href="News.html" class="underline" id="news">News</a></li>
+            <li><a href="Error.html" class="action_btn">Log in</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="main">
+            <h1>Our Games</h1>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="Images/BattleStrike.png" alt="">
+                    <div class="card-content">
+                        <h3>BattleStrike</h3>
+                        <p>Dive into the adrenaline-pumping world of the ultimate first-person shooter experience on Roblox! Engage in intense battles across dynamic maps with stunning graphics and realistic sound effects. Whether you prefer close-quarters combat or long-range sniping, this game offers a variety of weapons and tactical gear to suit your playstyle.</p>
+                        <a href="" onclick="BattleStrike()" class="btn-play">Play</a>
+                        <a href="Error.html" class="btn">Watch Trailer</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Desert.png" alt="">
+                    <div class="card-content">
+                        <h3>Desert Tycoon</h3>
+                        <p>Welcome to Desert Tycoon, the ultimate desert empire-building experience on Roblox! Transform an arid wasteland into a thriving oasis as you build, manage, and expand your own desert kingdom.</p>
+                        <a href="" onclick="Desert()" class="btn-play">Play</a>
+                        <a href="Error.html" class="btn">Watch Trailer</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Obby.png" alt="">
+                    <div class="card-content">
+                        <h3>The Unique Obby</h3>
+                        <p>Welcome to The Unique Obby, the ultimate obstacle course adventure on Roblox! Prepare yourself for a thrilling journey through a series of challenging and creatively designed levels that will test your skills, patience, and agility.</p>
+                        <a href="" onclick="Obby()" class="btn-play">Play</a>
+                        <a href="Error.html" class="btn">Watch Trailer</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/VR.png" alt="">
+                    <div class="card-content">
+                        <h3>VR Discovery</h3>
+                        <p>Discover VR games in a discovery page including filters, prices and more!</p>
+                        <a href="" onclick="VR()" class="btn-play">Play</a>
+                        <a href="Error.html" class="btn">Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="social-container">
+        <img src="Images/YT.png" alt="" onclick="YouTube()" class="social">
+        <img src="Images/Tiktok.png" alt="" onclick="TikTok()" class="social">
+        <img src="Images/Discord.png" alt="" onclick="Discord()" class="social">
+    </div>
+
+    <p class="copyright">Copyright 2024 Alex</p>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+        
+        toggleBtn.onclick = function () {
+
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            if (isOpen)
+            {
+                toggleBtn.innerHTML = "➤"
+            } else
+            {
+                toggleBtn.innerHTML = "☰"
+            }
+        }
+    </script>
+</body>
+</html>
