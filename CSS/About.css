@@ -15,6 +15,7 @@ section#main {
 
 #main h2 {
     padding-top: 25px;
+    font-size: 2rem;
 }
 
 .box {
@@ -22,7 +23,7 @@ section#main {
     border-style: solid;
     border-color: #3e5f18;
     border-radius: 10px;
-    width: 50%;
-    height: 750px;
+    width: 75%;
+    height: 75%;
     margin-bottom: 100px;
 }
