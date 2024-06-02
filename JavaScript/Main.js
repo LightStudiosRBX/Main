@@ -1,9 +1,9 @@
 function YouTube() {
-    window.open("https://www.youtube.com/channel/UC9SOZOJFYETPDjXMMrc0Esw")
+    window.open("https://www.youtube.com/channel/UCRn0Svptgo6a7VUKqwm0Wwg")
 }
 
-function TikTok() {
-    window.open("https://www.tiktok.com/@l1ghtstud1os")
+function Twitter() {
+    window.open("https://x.com/LStudios2024")
 }
 
 function Discord() {
