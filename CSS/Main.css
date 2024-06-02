@@ -26,7 +26,7 @@ a {
     position: fixed;
     top: 0;
     left: -10;
-    width: 105%;
+    width: 101%;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -244,6 +244,10 @@ a {
 /* Mbbile Friendly */
 
 @media (max-width: 992px) {
+    .background-header {
+        width: 105%;
+    }
+
     .navbar .links,
     .navbar .action_btn {
         display: none;
