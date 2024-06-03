@@ -262,6 +262,10 @@ a {
         display: none;
     }
 
+    .action_btn {
+        margin: auto;
+    }
+
     .navbar .action_btn2 {
         display: none;
     }
